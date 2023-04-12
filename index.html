@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <title>ReaPer</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="relative container mx-auto p-6">
+    <!-- Flex Container -->
+    <div class="flex items-center justify-between">
+      <!-- Logo -->
+      <div class="pt-2">
+        <img src="/img/reaper_transparent-solo.png" alt="reaper-logo">
+      </div>
+
+      <!-- Menu Items -->
+      <div class="hidden space-x-6 text-aLightGrey md:flex">
+        <!-- COLOR CHANGE -->
+        <a href="#features" class="hover:text-darkGrayishBlue">Demo</a>
+        <a href="#team" class="hover:text-darkGrayishBlue">Team</a>
+        <a href="https://github.com/oslabs-beta/ReaPer" class="hover:text-darkGrayishBlue">GitHub</a>
+        <a href="#" class="hover:text-darkGrayishBlue">Medium</a>
+        <a href="https://github.com/oslabs-beta/ReaPer" class="hover:text-darkGrayishBlue">LinkedIn</a>
+      </div>
+      <!-- COLOR CHANGE -->
+      <!-- Button -->
+      <a href="#get-started"
+        class="hidden p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight md:block">Get
+        Started</a>
+
+      <!-- Hamburger Icon -->
+      <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="md:hidden">
+      <div id="menu"
+        class="absolute flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+        <a href="#features">Demo</a>
+        <a href="#team">Team</a>
+        <a href="https://github.com/oslabs-beta/ReaPer">GitHub</a>
+        <a href="#">Medium</a>
+        <a href="https://www.linkedin.com/company/react-perf/">LinkedIn</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <!-- Flex Container -->
+    <div class="container flex flex-col-reverse items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0 md:flex-row">
+      <!-- Left Item -->
+      <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
+        <h1 class="max-w-md text-4xl font-bold text-center text-aLightGrey md:text-5xl md:text-left">
+          React Performance
+        </h1>
+        <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">Improve your React application's performance.
+        </p>
+        <div class="flex justify-center md:justify-start">
+          <!-- COLOR CHANGE -->
+          <a href="#" class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight">Get
+            Started</a>
+        </div>
+      </div>
+
+      <!-- Logo -->
+      <div class="md:w-1/2">
+        <img src="./img/dark_reaper.png" alt="" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features">
+    <!-- Flex Container -->
+    <div class="container flex flex-col px-4 mx-auto mt-20 space-y-12 md:space-y-0 md:flex-row">
+      <div>
+        <!-- Demo -->
+        <div class="flex flex-col space-y-12 md:w-2/2">
+          <h2 id="get-started" class="max-w-md text-aLightGrey text-4xl font-bold text-center md:text-left">
+            Demo
+          </h2>
+          <!-- COLOR CHANGE -->
+          <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
+            With ReaPer, developers can start and end a session to record render event data to see a dashboard of render
+            data details and information on how the virtual DOM and each component's performance changes during a
+            session.
+          </p>
+        </div>
+
+        <!-- Get Started Section -->
+        <div class="flex flex-col space-y-12 mt-20 md:w-2/2">
+          <h2 class="max-w-md text-aLightGrey text-4xl font-bold text-center md:text-left">
+            Get Started
+          </h2>
+          <!-- COLOR CHANGE -->
+          <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
+            To get started, install the ReaPer extension from the Chrome Web Store. Make sure you also have React
+            Developer Tools
+            <a
+              href="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en">extension</a>
+            installed on your browser.
+          </p>
+          <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
+            If you'd like to do a manual installation, please refer to
+            <a href="https://github.com/oslabs-beta/ReaPer">ReaPer's GitHub
+              repository's</a> section on Manual Installation.
+          </p>
+        </div>
+      </div>
+
+      <!-- Numbered List -->
+      <div class="flex flex-col space-y-8 md:w-1/2">
+        <!-- List Item 1 -->
+        <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+          <!-- Heading -->
+          <!-- COLOR CHANGE X3 -->
+          <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+            <div class="flex items-center space-x-2">
+              <div class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed">
+                01
+              </div>
+              <h3 class="text-darkGrayishBlue text-aLightGrey font-bold md:mb-4 md:hidden">
+                Render Events & Event Durations
+              </h3>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="hidden mb-4 text-aLightGrey text-lg font-bold md:block">
+              Render Events & Event Durations
+            </h3>
+            <p class="text-darkGrayishBlue">
+              Developers have a bar graph of render events and event durations.
+            </p>
+          </div>
+        </div>
+
+        <!-- List Item 2 -->
+        <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+          <!-- Heading -->
+          <!-- COLOR CHANGE X3 -->
+          <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+            <div class="flex items-center space-x-2">
+              <div class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed">
+                02
+              </div>
+              <h3 class="text-darkGrayishBlue text-aLightGrey font-bold md:mb-4 md:hidden">
+                Component Ranking
+              </h3>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="hidden mb-4 text-aLightGrey text-lg font-bold md:block">
+              Component Ranking
+            </h3>
+            <p class="text-darkGrayishBlue">
+              There is another graph of components ranked by their render time to see which costs the most to least time
+              to render.
+            </p>
+          </div>
+        </div>
+
+        <!-- List Item 3 -->
+        <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+          <!-- Heading -->
+          <!-- COLOR CHANGE X3 -->
+          <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+            <div class="flex items-center space-x-2">
+              <div class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed">
+                03
+              </div>
+              <h3 class="text-darkGrayishBlue text-aLightGrey font-bold md:mb-4 md:hidden">
+                Individual Component Details
+              </h3>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="hidden mb-4 text-aLightGrey text-lg font-bold md:block">
+              Individual Component Details
+            </h3>
+            <p class="text-darkGrayishBlue">
+              The last graph is a line graph of each component extracted to display and compare their individual render
+              times.
+            </p>
+          </div>
+        </div>
+
+        <!-- List Item 4 -->
+        <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+          <!-- Heading -->
+          <!-- COLOR CHANGE X3 -->
+          <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+            <div class="flex items-center space-x-2">
+              <div class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed">
+                04
+              </div>
+              <h3 class="text-darkGrayishBlue text-aLightGrey font-bold md:mb-4 md:hidden">
+                Virtual DOM Tree
+              </h3>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="hidden text-aLightGrey mb-4 text-lg font-bold md:block">
+              Virtual DOM Tree
+            </h3>
+            <p class="text-darkGrayishBlue">
+              By traversing the React Fiber tree, a visual of the React virtual DOM is created and displayed, allowing
+              developers to see how the virtual DOM and components’ state and props change over time.
+            </p>
+          </div>
+        </div>
+
+        <!-- List Item 5 -->
+        <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+          <!-- Heading -->
+          <!-- COLOR CHANGE X3 -->
+          <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+            <div class="flex items-center space-x-2">
+              <div class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed">
+                05
+              </div>
+              <h3 class="text-darkGrayishBlue text-aLightGrey font-bold md:mb-4 md:hidden">
+                Dashboard: All Charts
+              </h3>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="hidden mb-4 text-aLightGrey text-lg font-bold md:block">
+              Dashboard: All Charts
+            </h3>
+            <p class="text-darkGrayishBlue">
+              ReaPer's dashboard displays all four sets of data to analyze the render events in a single panel.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section id="team">
+    <!-- Container Heading and Info Block -->
+    <div class="max-w-6-xl px-5 mx-auto mt-32 text-center">
+      <!-- Heading -->
+      <h2 class="text-4xl text-aLightGrey font-bold text-center">
+        The ReaPer Team
+      </h2>
+      <!-- Team Members Container -->
+      <div class="flex flex-col mt-24 md:flex-row md:space-x-6">
+        <!-- Team Member 1 - COLOR CHANGE x2 -->
+        <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-beigeForTeam md: w-1/5">
+          <img src="./img/t-anna.png" class="w-35 -mt-14 rounded-full" alt="">
+          <h5 class="text-lg font-bold">Anna Ko</h5>
+          <p class="text-sm text-greyy">Software Engineer</p>
+          <div class="flex">
+            <a class="flex-row px-5 " href="https: //github.com/annako-io">
+              <img src="./img/icon-github.png" width="30px" alt="">
+            </a>
+            <a href="https://www.linkedin.com/in/annako/">
+              <img src="./img/icon-linkedin.png" width="30px" alt="">
+            </a>
+          </div>
+        </div>
+
+        <!-- Team Member 2 - COLOR CHANGE x2 -->
+        <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-beigeForTeam md: w-1/5">
+          <img src="./img/t-jamie.png" class="w-35 -mt-14 rounded-full" alt="">
+          <h5 class="text-lg font-bold">Jamie Lee</h5>
+          <p class="text-sm text-greyy">Software Engineer</p>
+          <div class="flex">
+            <a class="flex-row px-5 " href="https: //github.com/jamieslee97">
+              <img src="./img/icon-github.png" width="30px" alt="">
+            </a>
+            <a href="https://www.linkedin.com/in/jamieslee2/">
+              <img src="./img/icon-linkedin.png" width="30px" alt="">
+            </a>
+          </div>
+        </div>
+
+        <!-- Team Member 3 - COLOR CHANGE x2 -->
+        <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-beigeForTeam md: w-1/5">
+          <img src="./img/t-katrina.png" class="w-35 -mt-14 rounded-full" alt="">
+          <h5 class="text-lg font-bold">Katrina McDonagh</h5>
+          <p class="text-sm text-greyy">Software Engineer</p>
+          <div class="flex">
+            <a class="flex-row px-5 " href="https: //github.com/katmcd5">
+              <img src="./img/icon-github.png" width="30px" alt="">
+            </a>
+            <a href="https://www.linkedin.com/in/katrina-mcdonagh/">
+              <img src="./img/icon-linkedin.png" width="30px" alt="">
+            </a>
+          </div>
+        </div>
+
+        <!-- Team Member 4 - COLOR CHANGE x2 -->
+        <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-beigeForTeam md: w-1/5">
+          <img src="./img/t-michael.png" class="w-35 -mt-14 rounded-full" alt="">
+          <h5 class="text-lg font-bold">Michael Arita</h5>
+          <p class="text-sm text-greyy">Software Engineer</p>
+          <div class="flex">
+            <a class="flex-row px-5 " href="https: //github.com/MichaelArita">
+              <img src="./img/icon-github.png" width="30px" alt="">
+            </a>
+            <a href="https://www.linkedin.com/in/michael-s-arita/">
+              <img src="./img/icon-linkedin.png" width="30px" alt="">
+            </a>
+          </div>
+        </div>
+
+        <!-- Team Member 5 - COLOR CHANGE x2 -->
+        <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-beigeForTeam md: w-1/5">
+          <img src="./img/t-nancy.png" class="w-35 -mt-14 rounded-full" alt="">
+          <h5 class="text-lg font-bold">Nancy Yu</h5>
+          <p class="text-sm text-greyy">Software Engineer</p>
+          <div class="flex">
+            <a class="flex-row px-5 " href="https: //github.com/paynah">
+              <img src="./img/icon-github.png" width="30px" alt="">
+            </a>
+            <a href="https://www.linkedin.com/in/nancy-yu3/">
+              <img src="./img/icon-linkedin.png" width="30px" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <!-- COLOR CHANGE -->
+  <section id="cta" class="bg-brightRed">
+    <!-- Flex Container -->
+    <div
+      class="container flex flex-col items-center justify-between px-6 py-24 mx-auto space-y-12 md:flex-row md:space-y-0">
+      <h2 class="text-5xl font-bold leading-tight text-cener text-white md:text-4xl md:max-w-xl md:text-left">
+        Simplify improving React performance
+      </h2>
+      <!-- Button - COLOR CHANGE x2 -->
+      <div>
+        <a href="#get-started"
+          class="p-3 px-6 pt-2 text-brightRed bg-white  rounded-full shadow-2xl baseline hover:bg-lightBlue">
+          Get Started
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer - COLOR CHANGE -->
+  <footer class="bg-aLightGrey">
+    <!-- Flex Container -->
+    <div class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
+      <!-- Logo and Social Links Container -->
+      <div
+        class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start">
+
+        <div class="mx-auto my-6 text-center text-white md:hidden">
+          Copyright &copy; 2023, All Rights Reserved
+        </div>
+
+        <!-- Logo -->
+        <div>
+          <img src="./img/reaper_transparent-solo.png" class="h-8" alt="">
+        </div>
+        <!-- Social Links Container -->
+        <div class="flex justify-center space-x-4">
+          <!-- Link 1 -->
+          <a href="https://github.com/oslabs-beta/ReaPer">
+            <img src="./img/icon-github.png" class="h-8" alt="">
+          </a>
+
+          <!-- Link 2 -->
+          <a href="#">
+            <img src="./img/icon-medium-svgrepo-com.svg" class="h-8" alt="">
+          </a>
+
+          <!-- Link 3 -->
+          <a href="https://www.linkedin.com/company/react-perf/">
+            <img src="./img/icon-linkedin.png" class="h-8" alt="">
+          </a>
+
+        </div>
+      </div>
+
+      <!-- List Container - COLOR CHANGE -->
+      <div class="flex justify-around space-x-32">
+        <div class="flex flex-col space-y-3  text-darkBlue">
+          <a href="#get-started" class="hover:text-brightRed">Demo</a>
+          <a href="#team" class="hover:text-brightRed">Team</a>
+          <a href="https://github.com/oslabs-beta/ReaPer" class="hover:text-brightRed">GitHub</a>
+        </div>
+        <div class="flex flex-col space-y-3  text-darkBlue">
+          <a href="#" class="hover:text-brightRed">Medium</a>
+          <a href="https://www.linkedin.com/company/react-perf/" class="hover:text-brightRed">LinkedIn</a>
+          <a href="./privacy.html" class="hover:text-brightRed">Privacy Policy</a>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="hidden  text-darkBlue md:block self-end">
+        Copyright &copy; 2023, All Rights Reserved
+      </div>
+    </div>
+  </footer>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
