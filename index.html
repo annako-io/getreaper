@@ -25,7 +25,8 @@
         <a href="#features" class="hover:text-darkGrayishBlue">Demo</a>
         <a href="#team" class="hover:text-darkGrayishBlue">Team</a>
         <a href="https://github.com/oslabs-beta/ReaPer" class="hover:text-darkGrayishBlue">GitHub</a>
-        <a href="#" class="hover:text-darkGrayishBlue">Medium</a>
+        <a href="https://medium.com/@annako/reaper-an-open-source-dev-tool-to-analyze-react-application-performance-786f1d40f6de"
+          class="hover:text-darkGrayishBlue">Medium</a>
         <a href="https://www.linkedin.com/company/react-perf/" class="hover:text-darkGrayishBlue">LinkedIn</a>
       </div>
       <!-- COLOR CHANGE -->
@@ -49,7 +50,8 @@
         <a href="#features">Demo</a>
         <a href="#team">Team</a>
         <a href="https://github.com/oslabs-beta/ReaPer">GitHub</a>
-        <a href="#">Medium</a>
+        <a
+          href="https://medium.com/@annako/reaper-an-open-source-dev-tool-to-analyze-react-application-performance-786f1d40f6de">Medium</a>
         <a href="https://www.linkedin.com/company/react-perf/">LinkedIn</a>
       </div>
     </div>
@@ -143,6 +145,7 @@
             <p class="text-darkGrayishBlue">
               Developers have a bar graph of render events and event durations.
             </p>
+            <img src="./assets/dash-render_duration.png" alt="duration" max-width="300">
           </div>
         </div>
 
@@ -156,19 +159,19 @@
                 02
               </div>
               <h3 class="text-darkGrayishBlue text-aLightGrey font-bold md:mb-4 md:hidden">
-                Component Ranking
+                Component Details
               </h3>
             </div>
           </div>
 
           <div>
             <h3 class="hidden mb-4 text-aLightGrey text-lg font-bold md:block">
-              Component Ranking
+              Component Details
             </h3>
             <p class="text-darkGrayishBlue">
-              There is another graph of components ranked by their render time to see which costs the most to least time
-              to render.
+              Another graph displays the render time for each component during a specific render event.
             </p>
+            <img src="./assets/dash-component_render.png" alt="duration" max-width="300">
           </div>
         </div>
 
@@ -182,19 +185,20 @@
                 03
               </div>
               <h3 class="text-darkGrayishBlue text-aLightGrey font-bold md:mb-4 md:hidden">
-                Individual Component Details
+                Re-render Details
               </h3>
             </div>
           </div>
 
           <div>
             <h3 class="hidden mb-4 text-aLightGrey text-lg font-bold md:block">
-              Individual Component Details
+              Re-render Details
             </h3>
             <p class="text-darkGrayishBlue">
-              The last graph is a line graph of each component extracted to display and compare their individual render
-              times.
+              This list holds all the components re-rendered during a session. It displays the number of times that
+              component was re-rendered along with the average render duration.
             </p>
+            <img src="./assets/dash-render_list.png" alt="duration" max-width="300">
           </div>
         </div>
 
@@ -221,6 +225,7 @@
               By traversing the React Fiber tree, a visual of the React virtual DOM is created and displayed, allowing
               developers to see how the virtual DOM and components’ state and props change over time.
             </p>
+            <img src="./assets/dash-DOM.png" alt="duration" max-width="300">
           </div>
         </div>
 
@@ -246,6 +251,7 @@
             <p class="text-darkGrayishBlue">
               ReaPer's dashboard displays all four sets of data to analyze the render events in a single panel.
             </p>
+            <img src="./assets/dashboard.png" alt="duration" max-width="300">
           </div>
         </div>
       </div>
