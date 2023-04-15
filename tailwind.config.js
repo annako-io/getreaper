@@ -10,17 +10,22 @@ module.exports = {
     },
     extend: {
       colors: {
-        reactBlue: '#61D9FB',
-        blueish: '#0d8aba',
-        lightBlue: '#cbf2fb',
-        lightGrey: '#DCDCDC',
-        lightRed: 'hsl(12, 88%, 95%)',
-        beigeForTeam: '#E9DAC4',
+        brightRed: '#0d8aba',
+        brightRedLight: '#61D9FB',
+        brightRedSupLight: 'hsl(12, 88%, 95%)',
         darkBlue: 'hsl(228, 39%, 23%)',
         darkGrayishBlue: 'hsl(227, 12%, 61%)',
+        veryDarkBlue: 'hsl(233, 12%, 13%)',
+        veryPaleRed: 'hsl(13, 100%, 96%)',
+        veryLightGray: 'hsl(0, 0%, 98%)',
+        aLightGrey: '#DCDCDC',
+        reactBlue: '#61D9FB',
+        beigeForTeam: '#E9DAC4',
         greyy: '#686868',
-      },
+        lightBlue: '#cbf2fb',
+      }
     },
-    plugins: [],
-  }
+  },
+  plugins: [],
 }
+
